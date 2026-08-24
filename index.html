@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Julia Ziemba | QA Automation Engineer / SDET</title>
+<meta name="description" content="Julia Ziemba: engineer, SDET and AI-automation builder. 4+ years in tech across web maintenance, QA and automation. Python, Playwright, Claude/MCP, and design.">
+<meta name="author" content="Julia Ziemba">
+<meta property="og:title" content="Julia Ziemba | QA Automation Engineer / SDET">
+<meta property="og:description" content="I build the tools, then I make sure they hold up.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩵</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ambient background layers -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-orb bg-orb--1" aria-hidden="true"></div>
+<div class="bg-orb bg-orb--2" aria-hidden="true"></div>
+<div class="bg-orb bg-orb--3" aria-hidden="true"></div>
+<canvas class="bg-sparks" id="sparks" aria-hidden="true"></canvas>
+
+<div class="scroll-progress" aria-hidden="true"><i id="scrollBar"></i></div>
+
+<!-- ══════════ HEADER ══════════ -->
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="#home">
+    <span class="brand__mark" aria-hidden="true">JZ</span>
+    <span class="brand__text">
+      <b>Julia Ziemba</b>
+      <small>QA Automation / SDET</small>
+    </span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="#home" class="nav__link">Home</a>
+    <a href="#about" class="nav__link">About</a>
+    <a href="#skills" class="nav__link">Skills</a>
+    <a href="#experience" class="nav__link">Experience</a>
+    <a href="#projects" class="nav__link">Projects</a>
+    <a href="#offclock" class="nav__link">Off&nbsp;the&nbsp;clock</a>
+    <a href="#contact" class="nav__link">Contact</a>
+  </nav>
+
+  <div class="header-actions">
+    <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch colour theme" title="Switch theme">
+      <svg viewBox="0 0 24 24" class="icon-moon" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+      <svg viewBox="0 0 24 24" class="icon-sun" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>
+    </button>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- side rail -->
+<nav class="rail" aria-label="Section shortcuts">
+  <a href="#home" data-rail="home"><i></i><em>Home</em></a>
+  <a href="#about" data-rail="about"><i></i><em>About</em></a>
+  <a href="#skills" data-rail="skills"><i></i><em>Skills</em></a>
+  <a href="#experience" data-rail="experience"><i></i><em>Experience</em></a>
+  <a href="#projects" data-rail="projects"><i></i><em>Projects</em></a>
+  <a href="#offclock" data-rail="offclock"><i></i><em>Off the clock</em></a>
+  <a href="#contact" data-rail="contact"><i></i><em>Contact</em></a>
+</nav>
+
+<main id="main">
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero section" id="home">
+  <div class="hero__inner">
+
+    <div class="hero__copy">
+      <p class="eyebrow reveal"><span class="dot-live"></span> Available now, open to offers · Remote / Bielsko-Biała</p>
+
+      <h1 class="hero__title reveal">
+        <span class="line">Julia</span>
+        <span class="line line--outline">Ziemba</span>
+      </h1>
+
+      <p class="hero__role reveal">
+        <span class="tick">QA Automation Engineer</span>
+        <span class="sep">/</span>
+        <span class="tick">SDET</span>
+        <span class="sep">/</span>
+        <span class="tick">AI&nbsp;Automation</span>
+      </p>
+
+      <p class="hero__lede reveal">
+        I build the tools, then I make sure they hold up. 4+ years in tech across
+        web maintenance, QA engineering and automation, mostly
+        <em>writing Python and designing interfaces</em>, with testing as the discipline
+        that keeps the rest honest.
+      </p>
+
+      <div class="hero__cta reveal">
+        <a class="btn btn--primary" href="#projects">
+          See what I've built
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="assets/files/Julia_Ziemba_CV.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>
+          Download CV
+        </a>
+      </div>
+
+      <dl class="hero__stats reveal">
+        <div><dt>Years in Tech</dt><dd data-count="4" data-suffix="+">4+</dd></div>
+        <div><dt>Runtime cut on my agent</dt><dd data-count="94" data-suffix="%">94%</dd></div>
+        <div><dt>Years fixing live apps</dt><dd data-count="2" data-suffix="">2</dd></div>
+      </dl>
+    </div>
+
+    <!-- character card -->
+    <aside class="charcard reveal" id="charcard">
+      <div class="charcard__frame" data-tilt>
+        <div class="charcard__glow" aria-hidden="true"></div>
+        <div class="charcard__rarity" aria-hidden="true">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+
+        <img class="charcard__art" src="assets/img/me.webp"
+             alt="Chibi illustration of Julia with long cyan flame-like hair and a studded black jacket"
+             width="566" height="1244" loading="eager">
+
+        <div class="charcard__plate">
+          <p class="charcard__name">JULIA<span>ZIEMBA</span></p>
+          <p class="charcard__class">
+            <span class="badge badge--cyan">Magic · Technomancy</span>
+            <span class="badge badge--violet">Path · Automation</span>
+          </p>
+          <ul class="charcard__stats">
+            <li><span>Python</span><i style="--v:92%"></i></li>
+            <li><span>Test&nbsp;Automation</span><i style="--v:90%"></i></li>
+            <li><span>Design</span><i style="--v:88%"></i></li>
+            <li><span>AI&nbsp;Agents&nbsp;/&nbsp;MCP</span><i style="--v:84%"></i></li>
+            <li><span>SQL&nbsp;/&nbsp;Data</span><i style="--v:82%"></i></li>
+          </ul>
+        </div>
+
+        <p class="charcard__flavour">“me as a chibi instead of my face because it's more fun ✏️”</p>
+      </div>
+    </aside>
+
+  </div>
+
+  <a class="scroll-hint" href="#about" aria-label="Scroll to about">
+    <span></span>
+  </a>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section class="section" id="about">
+  <header class="sec-head reveal">
+    <p class="sec-kicker">01 / Profile</p>
+    <h2 class="sec-title">Nice to meet you</h2>
+  </header>
+
+  <div class="about">
+    <div class="about__main reveal">
+      <p class="lead">
+        Computer science engineering graduate, 4+ years in tech across web maintenance,
+        QA engineering and automation. Until recently on Comscore's AI enabling team.
+      </p>
+      <p>
+        I've been around computers since I was three. At eight I started poking at game source
+        code out of curiosity and made small mods for The Sims 2 and 3; by ten I was building
+        websites and blogs, and I cut my teeth on Tumblr themes and a lot of HTML and CSS. But the dream was to
+        build Baymax. I did not build Baymax, since it turned out I'm actually terrible at physics, but I do build
+        software. So, close enough.
+      </p>
+      <p>
+        I came to testing from programming and design rather than the other way round, and the two
+        turned out to feed each other. QA taught me to troubleshoot properly: I find my own bugs
+        before I declare something as finished, I think about the edge cases while I'm still designing,
+        and I write more precisely than I did when I only shipped features. Learning to break
+        things made me better at building them.
+      </p>
+      <p>
+        So the day-to-day is Python, shell and JavaScript, internal tools built from scratch and
+        designing interfaces, with a tester's habits underneath all of it.
+      </p>
+      <p>
+        Lately that's meant AI agents: a Claude-based QA assistant that reads Jira tickets and
+        writes structured QA reviews and Zephyr test cases, and a Claude&nbsp;+&nbsp;MCP&nbsp;+&nbsp;Playwright
+        system that turns a bug ticket into a reproducible browser test on its own.
+      </p>
+      <p>
+        With agents I care as much about the running cost as the output. Getting that Playwright
+        system to persist generated code instead of re-prompting for every click took its repeat
+        runs from ~700k tokens to zero. Cheaper to run, faster to trust, and a lot less water
+        wasted for the same answer.
+      </p>
+
+      <ul class="about__facts">
+        <li><span>Based in</span><b>Bielsko-Biała, PL</b></li>
+        <li><span>Currently</span><b>Available for hiring</b></li>
+        <li><span>Degree</span><b>CS, Eng. (UAM Poznań)</b></li>
+        <li><span>Languages</span><b>Polish (native) · English (CAE, 194) · Spanish</b></li>
+      </ul>
+
+      <div class="roles">
+        <p class="roles__title">Roles I'm a fit for</p>
+        <div class="chips chips--role">
+          <span>QA Automation Engineer</span><span>SDET</span><span>Automation Engineer</span>
+          <span>Software Engineer (Python)</span><span>AI / Agent Engineer</span>
+          <span>Internal Tools Engineer</span><span>Developer Experience</span>
+          <span>Frontend (HTML/CSS/JS)</span>
+        </div>
+        <p class="roles__note">
+          The job titles says QA, as it's the title I've held for a long time until recently. 
+          The work has been broader than that, but the QA part is
+          a large chunk of why the rest of it holds up.
+        </p>
+      </div>
+    </div>
+
+    <aside class="about__side reveal">
+      <div class="panel panel--tape">
+        <h3 class="panel__title">Things I care about</h3>
+        <ul class="ticklist">
+          <li>Tools people actually <em>want</em> to use</li>
+          <li>Automating the task you've done twice</li>
+          <li>Making technical stuff accessible to everyone else</li>
+          <li>Spending the fewest tokens that still does the job</li>
+          <li>Optimizing performance and efficiency</li>
+          <li>Making sure everything is as perfect as possible</li>
+        </ul>
+      </div>
+      <div class="panel panel--code">
+        <div class="panel__bar" aria-hidden="true"><i></i><i></i><i></i><span>julia.py</span></div>
+<pre><code><span class="c-key">class</span> <span class="c-cls">Julia</span>(<span class="c-cls">QAEngineer</span>):
+    stack   = [<span class="c-str">"python"</span>, <span class="c-str">"playwright"</span>, <span class="c-str">"pytest"</span>]
+    colour  = <span class="c-str">"#4FE3FF"</span>
+    <span class="c-key">def</span> <span class="c-fn">find_bug</span>(self, feature):
+        <span class="c-key">return</span> feature.<span class="c-fn">poke</span>(until=<span class="c-str">"weird"</span>)</code></pre>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section class="section" id="skills">
+  <header class="sec-head reveal">
+    <p class="sec-kicker">02 / Loadout</p>
+    <h2 class="sec-title">Technical skills</h2>
+    <p class="sec-sub">Grouped the way I actually use them.</p>
+  </header>
+
+  <div class="skills">
+
+    <article class="skillcard skillcard--key reveal">
+      <h3><span class="skillcard__ico">&lt;/&gt;</span> Programming</h3>
+      <p class="skillcard__lead">I'm a strong believer in Data Structures and Algorithms. However, these are my picks.</p>
+      <ul class="meters">
+        <li data-v="92"><span>Python</span><i></i></li>
+        <li data-v="85"><span>Bash / zsh / shellscripting</span><i></i></li>
+        <li data-v="78"><span>C++</span><i></i></li>
+        <li data-v="72"><span>JavaScript / TypeScript</span><i></i></li>
+        <li data-v="70"><span>C</span><i></i></li>
+      </ul>
+      <div class="chips chips--sm">
+        <span>SQL</span><span>HTML</span><span>CSS</span><span>JSON</span><span>Django</span><span>Node.js</span><span>Next.js</span>
+      </div>
+    </article>
+
+    <article class="skillcard skillcard--key reveal">
+      <h3><span class="skillcard__ico">⚙</span> Automation</h3>
+      <p class="skillcard__lead">Some things are better done while you chill.</p>
+      <div class="chips">
+        <span>pytest</span><span>Playwright</span><span>Postman</span><span>Shell scripting</span>
+        <span>Allure</span><span>Jenkins</span><span>Power Automate</span>
+      </div>
+    </article>
+
+    <article class="skillcard skillcard--hi reveal">
+      <h3><span class="skillcard__ico">✧</span> AI</h3>
+      <p class="skillcard__lead">No tokens misuse or hallucinations allowed.</p>
+      <div class="chips chips--hi">
+        <span>Claude</span><span>AI Agents</span><span>MCP</span><span>Agentic AI development</span>
+        <span>Process Automation</span><span>Copilot</span>
+      </div>
+    </article>
+
+    <article class="skillcard skillcard--key reveal">
+      <h3><span class="skillcard__ico">◐</span> Design</h3>
+      <p class="skillcard__lead">I enjoy looking at pretty things.</p>
+      <div class="chips">
+        <span>Web Design</span><span>Computer Graphics</span><span>UX Design</span>
+        <span>Design Thinking</span><span>Figma</span><span>Adobe XD</span><span>Digital Art</span>
+      </div>
+    </article>
+
+    <article class="skillcard skillcard--endorse reveal">
+      <h3><span class="skillcard__ico">★</span> Most endorsed</h3>
+      <p class="skillcard__lead">What my colleagues said I do well, on LinkedIn.</p>
+      <ul class="endorse">
+        <li><b>C++</b><i>13</i></li>
+        <li><b>Web Design</b><i>12</i></li>
+        <li><b>Computer Graphics</b><i>10</i></li>
+        <li><b>Computer Science</b><i>9</i></li>
+        <li><b>SQL · MySQL</b><i>8</i></li>
+        <li><b>CSS</b><i>6</i></li>
+      </ul>
+    </article>
+
+    <article class="skillcard reveal">
+      <h3><span class="skillcard__ico">✦</span> QA</h3>
+      <p class="skillcard__lead">2+ years of it, nosy and picky!</p>
+      <div class="chips">
+        <span>API Testing</span><span>Test Automation</span><span>Regression</span>
+        <span>Functional</span><span>Data Testing</span><span>Database Testing</span>
+        <span>Performance</span><span>Test Planning</span><span>Agile Testing</span>
+        <span>Game Testing</span>
+      </div>
+    </article>
+
+    <article class="skillcard reveal">
+      <h3><span class="skillcard__ico">▤</span> Data</h3>
+      <div class="chips">
+        <span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>Amazon S3</span>
+        <span>Hadoop</span><span>Airflow</span><span>Jupyter</span><span>Data analysis</span>
+      </div>
+    </article>
+
+    <article class="skillcard reveal">
+      <h3><span class="skillcard__ico">◈</span> Tools &amp; platforms</h3>
+      <div class="chips">
+        <span>Git</span><span>Linux</span><span>Jira</span><span>Zephyr</span>
+        <span>Grafana</span><span>Docker</span><span>Kubernetes</span><span>macOS</span>
+      </div>
+    </article>
+
+    <article class="skillcard skillcard--quiet reveal">
+      <h3><span class="skillcard__ico">◇</span> Product &amp; process</h3>
+      <div class="chips chips--dim">
+        <span>Technical Product Management</span><span>Product Strategy</span>
+        <span>Product Roadmapping</span><span>Scrum</span>
+      </div>
+    </article>
+
+  </div>
+
+  <aside class="stance reveal">
+    <p class="stance__label">Where I think AI belongs</p>
+    <div class="stance__body">
+      <p>
+        I build AI agents for a living and I'm deliberate about where they go. They earn their
+        keep on tedious, repetitive work: reading a hundred tickets, drafting the boilerplate,
+        running the same check for the thousandth time. That is the job I want them doing.
+      </p>
+      <p>
+        I don't use generative AI for art. Illustration and design are expression, and that part
+        should stay with the person making it. It's a line I hold in my own work and it isn't
+        up for negotiation.
+      </p>
+      <p>
+        Even inside automation I'd rather reach for it less than more. A lot of what gets called
+        AI automation is a deterministic script wearing a costume, and it usually ends up slower,
+        pricier and less predictable than the plain script would have been. The best decision I
+        made on my Playwright agent was working out which steps never needed a model and taking
+        it out of the loop: repeat runs dropped from about 700k tokens to zero and got roughly
+        ten times faster. Use the model where the task genuinely calls for judgment, not because
+        it's the impressive-sounding option.
+      </p>
+    </div>
+  </aside>
+</section>
+
+<!-- ══════════ EXPERIENCE ══════════ -->
+<section class="section" id="experience">
+  <header class="sec-head reveal">
+    <p class="sec-kicker">03 / Quest log</p>
+    <h2 class="sec-title">Work experience</h2>
+  </header>
+
+  <ol class="timeline">
+    <li class="tl reveal">
+      <div class="tl__meta">
+        <span class="tl__year">2026</span>
+        <span class="tl__tag tl__tag--now">Most recent</span>
+      </div>
+      <div class="tl__body">
+        <h3>AI Automation / AI Enabling Team</h3>
+        <p class="tl__org">Comscore</p>
+        <ul>
+          <li>Developed AI-powered agents that automate repetitive tasks for internal teams.</li>
+          <li>Built an AI-powered QA assistant using <b>Anthropic Claude</b> that reads Jira tickets and
+            comments, searches Wiki docs, analyses requirements, generates structured QA Reviews,
+            identifies testing scenarios and creates Zephyr test cases with reproduction steps.</li>
+          <li>Co-developed an extended version with my manager on an <b>internal MCP</b>, adding source-code
+            analysis, richer documentation analysis, BDD scenario generation and expanded QA Review output.</li>
+          <li>Worked in an AI enabling team identifying repetitive workflows and automating them with agents.</li>
+          <li>Built workflow automation with Microsoft Copilot and Power Automate where team constraints required it.</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="tl reveal">
+      <div class="tl__meta"><span class="tl__year">2025–2026</span></div>
+      <div class="tl__body">
+        <h3>Data QA Engineer</h3>
+        <p class="tl__org">Comscore</p>
+        <ul>
+          <li>Performed data quality testing across different data pipelines and processes.</li>
+          <li>Created data tests and analyses using Python and Jupyter Notebook.</li>
+          <li>Retrieved and analysed data from Amazon S3 and Hadoop.</li>
+          <li>Used Airflow to execute and validate data-related processes.</li>
+          <li>Helped define and expand the regression testing scope for data; supported multiple teams as a Data QA specialist.</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="tl reveal">
+      <div class="tl__meta"><span class="tl__year">2024–2025</span></div>
+      <div class="tl__body">
+        <h3>QA Engineer / API &amp; Test Automation</h3>
+        <p class="tl__org">Comscore</p>
+        <ul>
+          <li>Transitioned into QA with little prior professional testing experience and rapidly built a strong foundation in testing principles.</li>
+          <li>Performed API and functional testing; designed and executed regression tests.</li>
+          <li>Created automated tests using Python, shell scripting and Postman.</li>
+          <li>Supported QA across multiple teams and covered UI testing when dedicated UI testers were unavailable.</li>
+          <li>Used programming skills to automate previously manual testing tasks.</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="tl reveal">
+      <div class="tl__meta"><span class="tl__year">2022–2024</span></div>
+      <div class="tl__body">
+        <h3>IT Technical Product Support <span class="tl__note">two years on a live product</span></h3>
+        <p class="tl__org">Shareablee Inc. / Comscore</p>
+        <ul>
+          <li>Supported and troubleshot the company's web application, and fixed it rather than escalating everything.</li>
+          <li>Worked mainly on frontend issues, shipping smaller fixes and improvements without pulling in the core dev team.</li>
+          <li>Worked with Django and TypeScript while maintaining and troubleshooting the app.</li>
+          <li>Investigated reported issues, identified root causes and implemented or coordinated fixes.</li>
+          <li>Created technical reports and data extracts for other departments, including Grafana-based reports.</li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+
+  <div class="edu reveal">
+    <h3 class="edu__title">Education</h3>
+    <div class="edu__grid">
+      <div class="edu__item">
+        <p class="edu__deg">Computer Science <span>(Engineering Degree)</span></p>
+        <p class="edu__school">Uniwersytet im. Adama Mickiewicza w Poznaniu</p>
+        <p class="edu__years">2019–2023</p>
+      </div>
+      <div class="edu__item">
+        <p class="edu__deg">Math–Physics–IT Profiled Highschool</p>
+        <p class="edu__school">III Liceum Ogólnokształcące im. S. Żeromskiego, Bielsko-Biała</p>
+        <p class="edu__years">2016–2019</p>
+      </div>
+    </div>
+
+    <h3 class="edu__title edu__title--mt">Certifications</h3>
+    <div class="certs">
+      <div class="cert">
+        <p class="cert__name">Certificate in Advanced English (CAE), score 194</p>
+        <p class="cert__by">Cambridge English <span>· 2018</span></p>
+      </div>
+      <div class="cert">
+        <p class="cert__name">QA: Game Tester</p>
+        <p class="cert__by">Udemy <span>· 2024</span></p>
+      </div>
+      <div class="cert">
+        <p class="cert__name">Agile Testing</p>
+        <p class="cert__by">LinkedIn <span>· 2024</span></p>
+      </div>
+      <div class="cert">
+        <p class="cert__name">Technical Product Management</p>
+        <p class="cert__by">Project Management Institute <span>· 2024</span></p>
+      </div>
+      <div class="cert">
+        <p class="cert__name">Product Management: First Steps · Customer Development · Roadmap · Strategy</p>
+        <p class="cert__by">Project Management Institute <span>· 2024</span></p>
+      </div>
+      <div class="cert">
+        <p class="cert__name">Scrum: The Basics &amp; Advanced</p>
+        <p class="cert__by">LinkedIn · Project Management Institute <span>· 2024</span></p>
+      </div>
+      <div class="cert">
+        <p class="cert__name">Design Thinking: Understanding the Process</p>
+        <p class="cert__by">Project Management Institute <span>· 2024</span></p>
+      </div>
+      <div class="cert">
+        <p class="cert__name">Design Thinking for UX Design Managers</p>
+        <p class="cert__by">LinkedIn <span>· 2024</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section class="section" id="projects">
+  <header class="sec-head reveal">
+    <p class="sec-kicker">04 / Inventory</p>
+    <h2 class="sec-title">Selected projects</h2>
+    <p class="sec-sub">Professional work first, then the ones I built for fun. Repos on <a class="inline-link" href="https://github.com/xrvth" target="_blank" rel="noopener">github.com/xrvth</a>.</p>
+  </header>
+
+  <div class="projects">
+
+    <article class="proj proj--wide reveal">
+      <p class="proj__label">Professional</p>
+      <h3 class="proj__title">AI-Powered UI Testing with Claude, MCP &amp; Playwright</h3>
+      <div class="chips chips--sm">
+        <span>Claude</span><span>MCP</span><span>Playwright</span><span>Python</span><span>Allure</span>
+      </div>
+      <p class="proj__desc">
+        Co-developed an automated UI testing system that uses Claude through an MCP integration to
+        analyse Jira bug tickets and autonomously create and execute reproducible browser tests.
+      </p>
+      <ul class="proj__list">
+        <li>Generates step-by-step reproduction instructions and matching Playwright code straight from a bug ticket.</li>
+        <li>Executes browser interactions, captures screenshots and test evidence, and generates Allure reports.</li>
+        <li>Maintains a persistent website knowledge base (<code>knowledge.md</code>) that the system updates as it discovers new information.</li>
+        <li>Tracks token usage and execution time per scenario.</li>
+        <li>Re-architected to persist reusable Playwright code instead of calling the LLM for every browser interaction, cutting the running cost and the energy behind it, not just the wall-clock time.</li>
+      </ul>
+      <div class="proj__wins">
+        <div><b>~32 → ~20 min</b><span>initial run time</span></div>
+        <div><b>~700k → ~600k</b><span>initial tokens</span></div>
+        <div><b>~2 min · 0 tokens</b><span>subsequent runs</span></div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <p class="proj__label">Professional</p>
+      <h3 class="proj__title">Web UI for Automated Data Testing</h3>
+      <div class="chips chips--sm">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>pytest</span><span>AWS</span>
+      </div>
+      <p class="proj__desc">
+        A local web app built from scratch so non-technical teammates could run automated data tests
+        without touching Python or a terminal.
+      </p>
+      <ul class="proj__list">
+        <li>Pick environment and test suite; the right AWS profile is selected automatically.</li>
+        <li>Auto-generates required data such as S3 dates and paths, and prepares the pytest config.</li>
+        <li>Launches tests from the interface and shows pass/fail counts and pass percentage.</li>
+        <li>Highlights failed areas in the logs, with log download and PNG export for sharing.</li>
+        <li>Checks AWS profile login and authentication status.</li>
+      </ul>
+    </article>
+
+    <article class="proj reveal">
+      <p class="proj__label">Professional</p>
+      <h3 class="proj__title">AI-powered QA Review Agent</h3>
+      <div class="chips chips--sm">
+        <span>Claude</span><span>Jira</span><span>Zephyr</span><span>MCP</span>
+      </div>
+      <p class="proj__desc">
+        An agent that automated a significant part of the QA Review preparation process, end to end.
+      </p>
+      <ol class="proj__steps">
+        <li>Reads a Jira ticket and its comments</li>
+        <li>Searches relevant Wiki documentation</li>
+        <li>Analyses the requirements</li>
+        <li>Generates a structured QA Review</li>
+        <li>Identifies relevant testing scenarios</li>
+        <li>Creates Zephyr test cases and reproduction steps</li>
+        <li>Generates the matching Wiki documentation</li>
+      </ol>
+      <p class="proj__desc">Later expanded with my manager onto an internal MCP for source-code analysis and BDD scenario generation.</p>
+    </article>
+
+    <article class="proj proj--wide proj--personal reveal">
+      <p class="proj__label proj__label--alt">Personal · biggest side project</p>
+      <h3 class="proj__title">TwisteOptimizer</h3>
+      <div class="chips chips--sm">
+        <span>Python</span><span>SQLite</span><span>Vanilla JS</span><span>CSS</span><span>Web scraping</span><span>GPL&nbsp;v3</span>
+      </div>
+      <p class="proj__desc">
+        An offline-first planner for <em>Disney Twisted-Wonderland</em> that answers two questions about
+        <em>your</em> account, not the game in the abstract: is this card worth pulling for me, and would
+        levelling it actually help? ~10k lines, no frameworks and no dependencies. The HTTP server is
+        Python standard library only.
+      </p>
+      <ul class="proj__list">
+        <li>Scrapes and joins three sources: 514 cards from the EN wiki, Japanese tier rankings from kamigame, and the official game API for live banners.</li>
+        <li>Matches Japanese card names onto English ones (~99% exact, the rest by a similarity pass scoped per character); anything still unmatched is surfaced rather than guessed at.</li>
+        <li>Three interchangeable scoring models that that disagree on purpose (gap-filling, community tier and exam-output simulation), each showing showing the arithmetic behind it.</li>
+        <li>Team optimizer builds your best five for an exam or a specific story battle, scoring elements that <em>beat</em> the enemy rather than match it.</li>
+        <li>Seven dorm themes, custom form controls, a canvas overlay scrollbar and a full help guide; all motion disabled under <code>prefers-reduced-motion</code>.</li>
+        <li>Hand-authored SVG artwork, with every accent exposed as an RGB triplet so ~60 glows and washes follow the active theme at their authored opacity.</li>
+      </ul>
+      <p class="proj__desc proj__desc--note">
+        The settings screen separates what's fact from the game, what's someone's opinion converted to
+        numbers, and which constants are just judgement calls, because those are three different kinds
+        of input and a tool that blurs them is lying to you.
+      </p>
+      <p class="proj__soon">Repo goes public soon. Ask me for a walkthrough in the meantime.</p>
+    </article>
+
+    <article class="proj proj--sm reveal">
+      <p class="proj__label proj__label--alt">Personal</p>
+      <h3 class="proj__title">MineCppraft</h3>
+      <div class="chips chips--sm"><span>Unreal Engine</span><span>C++</span></div>
+      <p class="proj__desc">A Minecraft-inspired game built in Unreal Engine and C++. Yes, the name is a pun. No, I'm not sorry.</p>
+      <a class="proj__repo" href="https://github.com/xrvth/MineCppraft" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        View repo
+      </a>
+    </article>
+
+    <article class="proj proj--sm reveal">
+      <p class="proj__label proj__label--alt">Academic</p>
+      <h3 class="proj__title">Microshell</h3>
+      <div class="chips chips--sm"><span>C</span></div>
+      <p class="proj__desc">First-year university project: a simple microshell in C imitating basic zsh functionality.</p>
+      <a class="proj__repo" href="https://github.com/xrvth/Microshell-Project" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        View repo
+      </a>
+    </article>
+
+    <article class="proj proj--sm reveal">
+      <p class="proj__label proj__label--alt">Academic</p>
+      <h3 class="proj__title">Persistent Homology</h3>
+      <div class="chips chips--sm"><span>Python</span></div>
+      <p class="proj__desc">University project applying persistent homology. Topology, but make it computational.</p>
+      <a class="proj__repo" href="https://github.com/xrvth/Persistent-Homology" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        View repo
+      </a>
+    </article>
+
+    <article class="proj proj--sm reveal">
+      <p class="proj__label proj__label--alt">Academic</p>
+      <h3 class="proj__title">News Website Mockup</h3>
+      <div class="chips chips--sm"><span>HTML</span><span>CSS</span></div>
+      <p class="proj__desc">Visual design and implementation of a news website, my first proper taste of frontend design.</p>
+      <a class="proj__repo" href="https://github.com/xrvth/HTML-CSS-Mockup-Webpage" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        View repo
+      </a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ══════════ OFF THE CLOCK ══════════ -->
+<section class="section section--tint" id="offclock">
+  <header class="sec-head reveal">
+    <p class="sec-kicker">05 / Side quests</p>
+    <h2 class="sec-title">Off the clock</h2>
+    <p class="sec-sub">The part of a CV nobody has room for.</p>
+  </header>
+
+  <div class="fun">
+    <article class="funcard funcard--blue reveal">
+      <span class="funcard__ico" aria-hidden="true">⌨️</span>
+      <h3>Programming</h3>
+      <p>It's the actual passion, not just the day job. I've been writing code since I was eight and
+        I still open an editor on weekends. TwisteOptimizer is what that looks like when nobody's
+        assigning me tickets.</p>
+      <div class="chips chips--sm"><span>Python</span><span>Side projects</span><span>Reading source</span></div>
+    </article>
+
+    <article class="funcard reveal">
+      <span class="funcard__ico" aria-hidden="true">🎮</span>
+      <h3>Games</h3>
+      <p>Twisted Wonderland, Honkai: Star Rail and Overwatch, mostly. I have opinions about gacha UI design
+        and I will share them unprompted. Half of this site's layout is stolen from a character screen,
+        and I liked TWST enough to <a class="inline-link" href="#projects">build it a planner</a>.</p>
+      <div class="chips chips--sm"><span>TWST</span><span>HSR</span><span>Overwatch</span></div>
+    </article>
+
+    <article class="funcard reveal">
+      <span class="funcard__ico" aria-hidden="true">📊</span>
+      <h3>Data analysis</h3>
+      <p>Give me a messy dataset and a notebook and I'll lose an evening happily. It's the same itch
+        as testing, really: finding the thing in the data that shouldn't be there.</p>
+      <div class="chips chips--sm"><span>Python</span><span>Jupyter</span><span>SQL</span></div>
+    </article>
+
+    <article class="funcard reveal">
+      <span class="funcard__ico" aria-hidden="true">🖊️</span>
+      <h3>Drawing</h3>
+      <p>Digital art, mostly character work, plus vector when it has to scale or be edited later.
+        TwisteOptimizer's whole visual identity is hand-authored SVG. The chibi at the top of this
+        page is a placeholder until my own version of me is finished.</p>
+      <div class="chips chips--sm"><span>Digital Art</span><span>Computer Graphics</span><span>SVG</span><span>Character design</span></div>
+    </article>
+
+    <article class="funcard reveal">
+      <span class="funcard__ico" aria-hidden="true">🧸</span>
+      <h3>Nui photography</h3>
+      <p>Nuikatsu: taking my plushies out and photographing them properly, with real attention to
+        framing and light. It's a composition exercise that happens to be extremely cute.</p>
+      <div class="chips chips--sm"><span>Photography</span><span>Composition</span><span>Nuikatsu</span></div>
+    </article>
+
+    <article class="funcard reveal">
+      <span class="funcard__ico" aria-hidden="true">📺</span>
+      <h3>Anime</h3>
+      <p>Twisted Wonderland, Death Note, My Hero Academia, Ao no Exorcist, Kuroshitsuji.</p>
+      <div class="chips chips--sm"><span>Death Note</span><span>MHA</span><span>Ao no Exorcist</span><span>Kuroshitsuji</span></div>
+    </article>
+
+    <article class="funcard reveal">
+      <span class="funcard__ico" aria-hidden="true">👗</span>
+      <h3>Design &amp; fashion</h3>
+      <p>Layout, colour and clothes run on the same instinct: structure first, then the one detail that
+        makes it yours. It's also why my bug reports have a consistent visual hierarchy.</p>
+      <div class="chips chips--sm"><span>UI design</span><span>Type</span><span>Styling</span></div>
+    </article>
+
+    <article class="funcard reveal">
+      <span class="funcard__ico" aria-hidden="true">🐧</span>
+      <h3>Open source &amp; Linux</h3>
+      <p>Long-time open source fan. TwisteOptimizer is GPL v3 on purpose, because code you can read
+        and edit makes a better tool than a black box. I distro-hop for fun, and I'd rather learn a
+        format than be locked out of one.</p>
+      <div class="chips chips--sm"><span>GPL v3</span><span>Linux</span><span>Self-hosted</span></div>
+    </article>
+
+    <article class="funcard funcard--blue reveal">
+      <span class="funcard__ico" aria-hidden="true">🩵</span>
+      <h3>Blue</h3>
+      <p>All of it. Cyan, cobalt, that specific electric blue on a dark background. If you were wondering
+        whether this palette was an accident, it was not.</p>
+      <div class="swatches" aria-hidden="true">
+        <i style="--c:#4FE3FF"></i><i style="--c:#2D6BFF"></i><i style="--c:#7C5CFF"></i>
+        <i style="--c:#12204E"></i><i style="--c:#05081a"></i>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section class="section" id="contact">
+  <header class="sec-head reveal">
+    <p class="sec-kicker">06 / Say hi</p>
+    <h2 class="sec-title">Let's talk</h2>
+    <p class="sec-sub">Open to QA automation, SDET and AI-automation roles.</p>
+  </header>
+
+  <div class="contact">
+    <div class="contact__links reveal">
+      <a class="clink" href="mailto:juliamariaziemba@gmail.com">
+        <span class="clink__ico" aria-hidden="true">✉</span>
+        <span class="clink__body"><b>Email</b><small>juliamariaziemba@gmail.com</small></span>
+        <span class="clink__go" aria-hidden="true">→</span>
+      </a>
+      <a class="clink" href="https://github.com/xrvth" target="_blank" rel="noopener">
+        <span class="clink__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        </span>
+        <span class="clink__body"><b>GitHub</b><small>github.com/xrvth</small></span>
+        <span class="clink__go" aria-hidden="true">→</span>
+      </a>
+      <a class="clink" href="https://www.linkedin.com/in/xrvth" target="_blank" rel="noopener">
+        <span class="clink__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.65h.05A4.16 4.16 0 0 1 16.6 8.7c4 0 4.4 2.5 4.4 5.8V21h-4v-5.6c0-1.34-.02-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21H9Z"/></svg>
+        </span>
+        <span class="clink__body"><b>LinkedIn</b><small>linkedin.com/in/xrvth</small></span>
+        <span class="clink__go" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <form class="contact__form panel reveal" id="contactForm" novalidate>
+      <p class="form__hint">This opens your mail app with the message pre-filled.</p>
+      <div class="field">
+        <label for="cf-name">Your name</label>
+        <input id="cf-name" name="name" type="text" autocomplete="name" required placeholder="Ada Lovelace">
+      </div>
+      <div class="field">
+        <label for="cf-subject">Subject</label>
+        <input id="cf-subject" name="subject" type="text" required placeholder="QA Automation role at …">
+      </div>
+      <div class="field">
+        <label for="cf-msg">Message</label>
+        <textarea id="cf-msg" name="message" rows="5" required placeholder="Hi Julia, we're hiring for…"></textarea>
+      </div>
+      <button class="btn btn--primary btn--full" type="submit">
+        Send message
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h13M12 6l6 6-6 6"/></svg>
+      </button>
+      <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year">2026</span> Julia Ziemba · Built by hand with HTML, CSS and a lot of blue.</p>
+  <button class="totop" id="toTop" type="button" aria-label="Back to top">↑</button>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
