@@ -232,11 +232,14 @@
       </div>
       <div class="panel panel--code">
         <div class="panel__bar" aria-hidden="true"><i></i><i></i><i></i><span>julia.py</span></div>
-<pre><code><span class="c-key">class</span> <span class="c-cls">Julia</span>(<span class="c-cls">QAEngineer</span>):
-    stack   = [<span class="c-str">"python"</span>, <span class="c-str">"playwright"</span>, <span class="c-str">"pytest"</span>]
-    colour  = <span class="c-str">"#4FE3FF"</span>
-    <span class="c-key">def</span> <span class="c-fn">find_bug</span>(self, feature):
-        <span class="c-key">return</span> feature.<span class="c-fn">poke</span>(until=<span class="c-str">"weird"</span>)</code></pre>
+<pre><code><span class="c-key">class</span> <span class="c-cls">Julia</span>(<span class="c-cls">Engineer</span>):
+    stack  = [<span class="c-str">"python"</span>, <span class="c-str">"pytest"</span>, <span class="c-str">"mcp"</span>]
+    colour = <span class="c-str">"#4FE3FF"</span>
+
+    <span class="c-key">def</span> <span class="c-fn">solve</span>(self, task):
+        <span class="c-key">if</span> plan := self.<span class="c-fn">deterministic</span>(task):
+            <span class="c-key">return</span> plan  <span class="c-com"># cheaper, repeatable</span>
+        <span class="c-key">return</span> self.<span class="c-fn">ask_model</span>(task)</code></pre>
       </div>
     </aside>
   </div>

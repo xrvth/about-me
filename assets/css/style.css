@@ -538,6 +538,7 @@ html[data-theme="light"] .icon-moon{ display:none; }
 }
 .c-key{ color:var(--violet); } .c-cls{ color:var(--cyan); }
 .c-str{ color:#8ee9a8; } .c-fn{ color:#ffd76a; }
+.c-com{ color:var(--muted); font-style:italic; }
 
 /* ── Skills ────────────────────────────────────────────────── */
 .skills{ display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:1rem; }
