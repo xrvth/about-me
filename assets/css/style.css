@@ -192,6 +192,8 @@ html[data-theme="light"] .bg-sparks{ opacity:.35; }
              background .25s var(--ease), border-color .25s var(--ease);
 }
 .btn svg{ width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+/* Brand marks are solid shapes, not line icons, so they need fill not stroke. */
+.btn svg.btn__brand{ fill:currentColor; stroke:none; }
 .btn--primary{
   background:var(--grad); color:#04070f;
   box-shadow:0 10px 34px -12px var(--glow-blue);
