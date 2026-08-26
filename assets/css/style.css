@@ -799,6 +799,11 @@ html[data-theme="light"] .icon-moon{ display:none; }
   border-color:color-mix(in srgb, var(--violet) 28%, transparent);
 }
 .proj--personal:hover{ border-color:color-mix(in srgb, var(--violet) 55%, transparent); }
+/* TwisteOptimizer keeps the full row as the flagship; the other three personal
+   projects are peers and sit three across. */
+.proj--personal:not(.proj--wide){ grid-column:span 4; }
+@media (max-width:1000px){ .proj--personal:not(.proj--wide){ grid-column:span 6; } }
+@media (max-width:680px){ .proj--personal:not(.proj--wide){ grid-column:span 12; } }
 .proj--personal .proj__title{ color:var(--text); }
 .proj__desc em{ color:var(--text); font-style:italic; }
 .proj__desc--note{
